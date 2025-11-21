@@ -76,7 +76,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </div>
-                        <h2 class="text-xl font-bold tracking-tight">AYU PRINTING</h2>
+                        <h2 class="text-xl font-bold tracking-tight">AYUNG PRINTING</h2>
                     </div>
                     <nav class="hidden md:flex flex-1 justify-end items-center gap-8">
                         <a class="text-sm font-medium hover:text-primary dark:hover:text-secondary transition-colors"
