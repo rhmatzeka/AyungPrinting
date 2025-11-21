@@ -252,18 +252,18 @@
                                 </div>
                                 <div
                                     class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
-                                    <a href="code2.html">
+                                    <a href="code2.php">
                                         <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-");'>
                                         </div>
-                                        <div class="p-6 pt-0 flex flex-col gap-2">
-                                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl
-                                            </h3>
-                                            <p class="text-sm font-normal text-text-light/80 dark:text-text-dark/80">Spanduk
-                                                vinyl format besar yang tahan lama, sempurna untuk acara di dalam dan luar
-                                                ruangan.</p>
-                                        </div>
                                     </a>
+                                    <div class="p-6 pt-0 flex flex-col gap-2">
+                                        <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl
+                                        </h3>
+                                        <p class="text-sm font-normal text-text-light/80 dark:text-text-dark/80">Spanduk
+                                            vinyl format besar yang tahan lama, sempurna untuk acara di dalam dan luar
+                                            ruangan.</p>
+                                    </div>
                                 </div>
                                 <div
                                     class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
