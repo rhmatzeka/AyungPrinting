@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,6 +20,11 @@
 
         .hero-bg {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-');
+        }
+        
+        /* Tambahan smooth scroll agar navigasi lebih enak */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
     <script id="tailwind-config">
@@ -63,8 +68,9 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark antialiased">
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
         <div class="layout-container flex h-full grow flex-col">
+            
             <header
-                class="sticky top-0 z-50 w-full bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-lg border-b border-border-light dark:border-border-dark"
+                class="fixed top-0 left-0 right-0 z-50 w-full bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-lg border-b border-border-light dark:border-border-dark transition-all duration-300"
                 id="home">
                 <div
                     class="flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
@@ -76,7 +82,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </div>
-                        <h2 class="text-xl font-bold tracking-tight">AYUNG PRINTING</h2>
+                        <h2 class="text-xl font-bold tracking-tight">AYU PRINTING</h2>
                     </div>
                     <nav class="hidden md:flex flex-1 justify-end items-center gap-8">
                         <a class="text-sm font-medium hover:text-primary dark:hover:text-secondary transition-colors"
@@ -107,8 +113,7 @@
             <main class="flex-1">
                 <section
                     class="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center text-center text-white hero-bg bg-cover bg-center bg-no-repeat">
-                    <div class="px-4 md:px-6 max-w-7xl mx-auto">
-                        <div class="flex flex-col gap-6 items-center">
+                    <div class="px-4 md:px-6 max-w-7xl mx-auto pt-20"> <div class="flex flex-col gap-6 items-center">
                             <h1 class="text-4xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">Wujudkan Ide Anda
                             </h1>
                             <p class="max-w-[700px] text-lg font-light text-gray-200 md:text-xl">Solusi lengkap untuk
@@ -211,8 +216,6 @@
                     </div>
                 </section>
 
-                <!-- PORTOFOLIO -->
-
                 <section class="w-full py-16 md:py-28" id="our-work">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto">
                         <div class="flex flex-col gap-12">
@@ -252,18 +255,18 @@
                                 </div>
                                 <div
                                     class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
-                                    <a href="code2.php">
+                                    <a href="code2.html">
                                         <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-");'>
                                         </div>
+                                        <div class="p-6 pt-0 flex flex-col gap-2">
+                                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl
+                                            </h3>
+                                            <p class="text-sm font-normal text-text-light/80 dark:text-text-dark/80">Spanduk
+                                                vinyl format besar yang tahan lama, sempurna untuk acara di dalam dan luar
+                                                ruangan.</p>
+                                        </div>
                                     </a>
-                                    <div class="p-6 pt-0 flex flex-col gap-2">
-                                        <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl
-                                        </h3>
-                                        <p class="text-sm font-normal text-text-light/80 dark:text-text-dark/80">Spanduk
-                                            vinyl format besar yang tahan lama, sempurna untuk acara di dalam dan luar
-                                            ruangan.</p>
-                                    </div>
                                 </div>
                                 <div
                                     class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
