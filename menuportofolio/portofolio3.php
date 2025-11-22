@@ -30,16 +30,7 @@
       },
     }
   </script>
-
-  <style>
-    /* Smooth Scrolling untuk seluruh halaman */
-    html { scroll-behavior: smooth; }
-    
-    /* CSS Tambahan untuk efek hover gambar */
-    .thumbnail { transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent; }
-    .thumbnail:hover { transform: scale(1.05); border-color: #137fec; }
-    .active-thumb { border-color: #137fec; opacity: 0.7; }
-  </style>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 overflow-x-hidden">
@@ -50,12 +41,12 @@
         <div class="size-5 sm:size-6 text-primary animate-bounce">
           <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path></svg>
         </div>
-        <h2 class="text-base sm:text-lg font-bold tracking-[-0.015em]">AYU PRINTING</h2>
+        <h2 class="text-base sm:text-lg font-bold tracking-[-0.015em]">AYUNG PRINTING</h2>
       </div>
 
       <div class="hidden lg:flex flex-1 justify-end gap-8 items-center">
         <nav class="flex gap-8">
-          <a class="text-sm font-medium hover:text-primary transition-colors" href="index.php">Beranda</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="../index.php">Beranda</a>
           <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Portofolio</a>
           <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Kontak</a>
         </nav>
@@ -122,84 +113,6 @@
   </main>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    // ... (Gunakan script JS yang sama persis dari jawaban sebelumnya) ...
-    // Paste ulang script JS dari jawaban sebelumnya di sini
-     const portfolioData = {
-      title: "Desain Kemasan Premium XYZ",
-      category: "Packaging",
-      description: "Proyek ini bertujuan untuk menciptakan identitas visual kemasan yang mewah dan modern.",
-      details: [
-        { title: "Tantangan", text: "Klien butuh kemasan yang tahan banting tapi tetap terlihat mahal di rak supermarket." },
-        { title: "Solusi", text: "Kami menggunakan bahan Art Carton 310gsm dengan finishing Hot Foil Gold." },
-        { title: "Hasil", text: "Penjualan meningkat 25% di bulan pertama peluncuran." }
-      ],
-      specs: [
-        { label: "Klien", value: "XYZ Cosmetics Inc." },
-        { label: "Bahan", value: "Art Carton 310gsm" },
-        { label: "Teknik", value: "Offset, Hot Foil, Emboss" }
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1920&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1605610916719-e62bd6910981?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1556742524-8c066e228ab2?q=80&w=800&auto=format&fit=crop"
-      ]
-    };
-
-    document.addEventListener('DOMContentLoaded', () => {
-      AOS.init({ duration: 800, once: true });
-      loadContent();
-    });
-    
-    function loadContent() {
-      document.getElementById('project-title').innerText = portfolioData.title;
-      const galleryContainer = document.getElementById('gallery-grid');
-      portfolioData.images.forEach((imgUrl, index) => {
-        const div = document.createElement('div');
-        div.className = `thumbnail w-full aspect-square bg-cover bg-center rounded-xl ${index === 0 ? 'active-thumb' : ''}`;
-        div.style.backgroundImage = `url('${imgUrl}')`;
-        div.onclick = () => changeMainImage(imgUrl, div);
-        galleryContainer.appendChild(div);
-      });
-
-      const detailsContainer = document.getElementById('project-details');
-      portfolioData.details.forEach(item => {
-        // PERBAIKAN DI SINI: Menambahkan class break-words agar teks tidak bablas
-        const html = `
-          <div data-aos="fade-up" class="w-full break-words">
-            <h2 class="text-xl sm:text-2xl font-bold mb-2 text-slate-900 dark:text-white">${item.title}</h2>
-            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed text-justify sm:text-left">${item.text}</p>
-          </div>`;
-        detailsContainer.innerHTML += html;
-      });
-
-      const specsContainer = document.getElementById('project-specs');
-      portfolioData.specs.forEach(spec => {
-        const html = `
-          <li class="flex flex-col border-b border-slate-100 dark:border-slate-800 pb-2">
-            <span class="font-semibold text-slate-800 dark:text-slate-200">${spec.label}</span>
-            <span class="text-slate-600 dark:text-slate-300">${spec.value}</span>
-          </li>`;
-        specsContainer.innerHTML += html;
-      });
-    }
-
-    function changeMainImage(url, clickedElement) {
-      const mainImg = document.getElementById('main-image');
-      mainImg.style.opacity = '0.5';
-      setTimeout(() => {
-        mainImg.style.backgroundImage = `url('${url}')`;
-        mainImg.style.opacity = '1';
-      }, 200);
-      document.querySelectorAll('.thumbnail').forEach(el => el.classList.remove('active-thumb'));
-      clickedElement.classList.add('active-thumb');
-    }
-
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.classList.toggle('hidden');
-    }
-  </script>
+  <script src="../assets/js/portofolio.js"></script>
 </body>
 </html>

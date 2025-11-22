@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>AYU PRINTING - Solusi Cetak Modern</title>
+    <title>AYUNG PRINTING - Solusi Cetak Modern</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -17,16 +17,8 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-');
-        }
-        
-        /* Tambahan smooth scroll agar navigasi lebih enak */
-        html {
-            scroll-behavior: smooth;
-        }
     </style>
+    <link rel="stylesheet" href="assets/css/style.css">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -82,7 +74,7 @@
                                     fill="currentColor"></path>
                             </svg>
                         </div>
-                        <h2 class="text-xl font-bold tracking-tight">AYU PRINTING</h2>
+                        <h2 class="text-xl font-bold tracking-tight">AYUNG PRINTING</h2>
                     </div>
                     <nav class="hidden md:flex flex-1 justify-end items-center gap-8">
                         <a class="text-sm font-medium hover:text-primary dark:hover:text-secondary transition-colors"
@@ -111,6 +103,8 @@
                 </div>
             </header>
             <main class="flex-1">
+
+                <!--Header section-->
                 <section
                     class="relative w-full h-[70vh] min-h-[500px] flex items-center justify-center text-center text-white hero-bg bg-cover bg-center bg-no-repeat">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto pt-20"> <div class="flex flex-col gap-6 items-center">
@@ -132,6 +126,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- About AyungPrinting Section -->
                 <section class="w-full py-16 md:py-28" id="about">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto">
                         <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -141,10 +137,10 @@
                                     Kami</span>
                                 <h2
                                     class="text-3xl font-bold tracking-tight sm:text-4xl text-text-light dark:text-text-dark">
-                                    Apa itu AYU PRINTING?</h2>
+                                    Apa itu AYUNG PRINTING?</h2>
                                 <p
                                     class="text-base font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80">
-                                    AYU PRINTING adalah mitra terpercaya Anda untuk semua kebutuhan percetakan. Kami
+                                    AYUNG PRINTING adalah mitra terpercaya Anda untuk semua kebutuhan percetakan. Kami
                                     berdedikasi untuk memberikan kualitas dan layanan yang luar biasa, mulai dari kartu
                                     nama hingga spanduk format besar. Misi kami adalah mewujudkan visi Anda dengan
                                     presisi, warna-warna cerah, dan bahan-bahan premium.</p>
@@ -159,6 +155,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Layanan Section -->
                 <section class="w-full py-16 md:py-28 bg-card-light dark:bg-card-dark" id="services">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto">
                         <div class="flex flex-col gap-12">
@@ -216,6 +214,7 @@
                     </div>
                 </section>
 
+                <!-- our portoflio section -->
                 <section class="w-full py-16 md:py-28" id="our-work">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto">
                         <div class="flex flex-col gap-12">
@@ -226,9 +225,10 @@
                                     class="text-3xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-4xl">
                                     Portofolio Kami</h2>
                             </div>
+                            
                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                    <a href="menuportofolio/portofolio1.php">
                                     <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2K4QSTPrqwaNGYyIHUc855lQFjk23NfkSie9nkyyhT89V05nD9gsajdS2xnrBBWxQSMjk4uAH8ijIEVEmb5yFw2k_8-MyOPCf7ERb8SrdSWv_TjvRf76i_mfK1JNoDlMnS7NnSZiYQnvUQvJXnZb8Vr8mAtxpsgoHuYsS7R23EgbccKzb2RvJ8Vykk1zq4omItqtIFoIGmdpNx632NcV8xMTaFAZIjVBcZvy9pFpQ9U0cFbUUoGVXVsaXAE2mDoY11yKYiEW_sSLB");'>
                                     </div>
@@ -239,9 +239,12 @@
                                             brosur berkualitas tinggi dengan finishing glossy untuk promosi bisnis yang
                                             efektif.</p>
                                     </div>
+                                    </a>
                                 </div>
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                
+                            
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                    <a href="menuportofolio/portofolio2.php">
                                     <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChZ64ag007CRkrp-R7cTT-ODvJosV3eP_SM6UrNMGSPEZBaLQYABrqiK8uhyyLcnPmLJksFsm4rJ7U9EL96h3IMeQeUD12KZxL1b6I-WdQW7RbgMEPqCQUMCd8ly8QIpqUiZhY2jA2b0WYqYxAIZMzpFtVEEy0W-WNjaNHjxJ6ArB4NR99nB5-pf-G35lxy8mH4a1hkyacL5hT_Iez1oJwV9uv4wGJ86ZBwof7TQTqg21C4KC7P3qLdzyX0GSnESB6dbhAvHcETlmB");'>
                                     </div>
@@ -252,24 +255,25 @@
                                             dan cetak kartu nama yang elegan dan profesional untuk kesan pertama yang
                                             memukau.</p>
                                     </div>
+                                    </a>
                                 </div>
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
-                                    <a href="code2.html">
-                                        <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
+
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                        <a href="menuportofolio/portofolio3.php">
+                                    <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-");'>
                                         </div>
                                         <div class="p-6 pt-0 flex flex-col gap-2">
-                                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl
-                                            </h3>
+                                            <h3 class="text-lg font-bold text-text-light dark:text-text-dark">Spanduk Vinyl</h3>
                                             <p class="text-sm font-normal text-text-light/80 dark:text-text-dark/80">Spanduk
                                                 vinyl format besar yang tahan lama, sempurna untuk acara di dalam dan luar
                                                 ruangan.</p>
                                         </div>
-                                    </a>
+                                        </a>
                                 </div>
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                    <a href="menuportofolio/portofolio4.php">
                                     <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9STlytfM39c0EcPEOH1gbhBObWKKCnCUQGEXHnOSWifGmig4VWzOJ1K7J7AIToTsl1r1O1x4nl-UVJF33h6EK2xQa9BimSIXsI0QR3wxLmLR_Z7asNsTM-spbBClZEmvCrnz5dCgCZSGZzLF_EYJ1a-LKG_fJIEnqPDoic_gvT2PvLNrjqgQmoNqToKx65HchmLTwesky63Aq3gJgPuRdAvg1BjyD6VAv_COUXhJRUML8lAAN82eQ25Lly8URkt2vhjKjMi2_9x3m");'>
                                     </div>
@@ -280,9 +284,11 @@
                                             kaos custom dengan logo perusahaan atau desain unik untuk seragam atau
                                             merchandise.</p>
                                     </div>
+                                    </a>
                                 </div>
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                    <a href="menuportofolio/portofolio5.php">
                                     <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNc4oYJwZAiN4xjjuefX6lhSajg5XtNoPVfJNXgeY9ol0zekeTWohTh4Z66L8wCjziEufP16WbpSxFe9IZsFyAASHXxljl9rv1bbxZYT85dezWq5wLT1jVmKSuRCJWQuzueC5JYGOw_Jx8opMFFlLRPn0jU_EyQOp_QSjSkmy9NungvAtwxkVluXExKbpadC7DhrYH7DVnZIN209CCS_2jR5CBEOZFwqrop-Wzq21Zkn5rfpW-2oaMrUBIS10Zbaqgb4ZchDC2Jp55");'>
                                     </div>
@@ -293,9 +299,11 @@
                                             stiker cetak dengan berbagai bentuk dan ukuran, cocok untuk branding produk.
                                         </p>
                                     </div>
+                                    </a>
                                 </div>
-                                <div
-                                    class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                
+                                <div class="flex flex-col gap-4 rounded-xl overflow-hidden border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark shadow-card dark:shadow-card-dark">
+                                    <a href="menuportofolio/portofolio6.php">
                                     <div class="w-full h-56 bg-center bg-no-repeat bg-cover"
                                         style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqI7swZ5kZFwVZiUe5mhFtj3Pfrun3CEUYtYzDfveNb_w4cIPbR6L8CcOy-RJfy9Y5EVJe9WOqJs2W81kGDLtq-rgYOkN3vklACzQCgULVY_uTSY2X0vgppKWrdelHzVf6l_Q2PvoclEIjc8p8rXTnzF3DEXZ_ec7Q5tqLr3Q-_GL2TWrOD4JvnovTztjcgsoyNBDvVGB0S6X67qKG5SbR5pP0FQ_q5V2KtkpVAFsH-QUPBOasnVS72-JnHS1Jx0D-gF0sLdXKD4P1");'>
                                     </div>
@@ -306,11 +314,15 @@
                                             Undangan acara yang dicetak dengan elegan untuk momen-momen spesial Anda.
                                         </p>
                                     </div>
+                                    </a>
                                 </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
+
+                <!-- Testimoni Section -->
                 <section class="w-full py-16 md:py-28 bg-card-light dark:bg-card-dark" id="testimonials">
                     <div class="px-4 md:px-6 max-w-7xl mx-auto">
                         <div class="flex flex-col gap-12">
@@ -359,7 +371,7 @@
                                                 style="font-variation-settings: 'FILL' 1">star</span><span
                                                 class="material-symbols-outlined !text-xl"
                                                 style="font-variation-settings: 'FILL' 1">star</span></div>
-                                        <p class="text-base font-normal text-text-light/80 dark:text-text-dark/80">"AYU
+                                        <p class="text-base font-normal text-text-light/80 dark:text-text-dark/80">"AYUNG
                                             PRINTING menangani pesanan spanduk besar kami dengan sempurna. Warnanya
                                             cerah dan bahannya tahan lama. Pelayanan prima."</p>
                                         <p class="text-sm font-bold text-text-light dark:text-text-dark">- Michael B.,
@@ -390,10 +402,12 @@
                     </div>
                 </section>
             </main>
+
+            <!-- Footer Section -->
             <footer class="w-full bg-card-dark text-text-dark/80 py-16" id="contact">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div class="flex flex-col gap-4 md:col-span-2">
-                        <h3 class="font-bold text-xl text-white">AYU PRINTING</h3>
+                        <h3 class="font-bold text-xl text-white">AYUNG PRINTING</h3>
                         <p class="text-sm leading-relaxed max-w-md">Mitra Anda untuk solusi cetak premium. Kami
                             berkomitmen pada kualitas, kecepatan, dan kepuasan pelanggan. Mari ciptakan sesuatu yang
                             luar biasa bersama.</p>
@@ -405,7 +419,7 @@
                         <div class="flex items-center gap-3 text-sm"><span
                                 class="material-symbols-outlined">sms</span><span>+62 123 4567 891</span></div>
                         <div class="flex items-center gap-3 text-sm"><span
-                                class="material-symbols-outlined">alternate_email</span><span>kontak@ayuprinting.com</span>
+                                class="material-symbols-outlined">alternate_email</span><span>kontak@ayungprinting.com</span>
                         </div>
                         <div class="flex items-start gap-3 text-sm mt-2"><span
                                 class="material-symbols-outlined mt-1">location_on</span><span>Jl. Percetakan No.
@@ -447,7 +461,7 @@
                 </div>
                 <div
                     class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-border-dark/20 text-center text-sm w-full">
-                    <p>© 2024 AYU PRINTING. Hak Cipta Dilindungi.</p>
+                    <p>© 2024 AYUNG PRINTING. Hak Cipta Dilindungi.</p>
                 </div>
             </footer>
         </div>

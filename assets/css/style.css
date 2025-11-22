@@ -1,0 +1,31 @@
+/* Combined extracted CSS from index.php and portofolio1.php */
+
+/* Smooth Scrolling untuk seluruh halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Material Symbols helpers copied from inline style in index.php */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hero background helper used in index.php */
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBR8dzkJU-YFlwHQF-Hvrq8siouGwXOFSYN5deCtr8599Q8On_MPV-wzuEvIX8TFc8YYe-ZzpFRxb1Arxt4uNs01FlZUs0SaWUZ9KMLxvevK7e7ZjxHhtI0T7ZEwgZJ5f69JmPq7oCnLa1Wb0lH7DFq4qSJXQHDJAuw8tXa2tYvmYFL7Rf3IrWwmu_uf6-eUO4laYgG-gGyd_ZKI2fOEHntj_9rpmbXY7ijVop-f7LlY1yMYOl0yI0KPEO4e2-qe_X_6pCJP8ZD42K-');
+}
+
+/* Thumbnails and gallery hover effects from portofolio1.php */
+.thumbnail {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.thumbnail:hover {
+  transform: scale(1.05);
+  border-color: #137fec;
+}
+.active-thumb {
+  border-color: #137fec;
+  opacity: 0.7;
+}
